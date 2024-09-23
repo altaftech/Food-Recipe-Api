@@ -1,0 +1,25 @@
+.recipe-detail-container {
+    padding: 20px;
+  }
+  
+  .recipe-detail-card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .recipe-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .recipe-info {
+    flex: 1;
+  }
+  
+  .nutrient-info p, .serving-info p {
+    margin: 5px 0;
+  }
+  
