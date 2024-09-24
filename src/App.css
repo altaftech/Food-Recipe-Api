@@ -13,7 +13,7 @@
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-columns: repeat(5, 1fr); /* Three columns */
     gap: 20px;
   }
   
