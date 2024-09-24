@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './RecipeDetail.css';
 
 const RecipeDetail = () => {
   const { label } = useParams(); // Get the recipe label from the URL
   const [recipe, setRecipe] = useState(null);
+  const navigate = useNavigate();
 
   const APP_ID = 'fe29d5c5';
   const APP_KEY = 'fe7130e3b424fd89b502d30c403518bf';
@@ -32,6 +33,9 @@ const RecipeDetail = () => {
   return (
     <>
     <div className="recipe-detail-container">
+    <div style={{ width: '150px' }}>
+          <button className='btn btn-success w-100' style={{ border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '7px 20px', borderRadius: '5px', background: '#F0F0F0', color: '#735DA5', fontSize: '20px', fontWeight: '550', }} onClick={() => navigate('/')}><img src="/back.png" alt="" width={30} /> &nbsp;Back</button>
+        </div>
       <h1 className="text-center my-4" style={{fontWeight:500,fontSize:'30px'}}>{recipe.label}</h1>
 
       <div className="recipe-detail-card" style={{background:'white'}}>
